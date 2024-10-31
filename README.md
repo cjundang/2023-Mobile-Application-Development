@@ -1,4 +1,4 @@
-# Mobile-Application-Development-with-React-Native
+# Mobile Application Development with React Native
 
 ### Week 1: Introduction to Mobile Development & JavaScript Basics
 
