@@ -64,6 +64,35 @@
 | **Hybrid**  | Single codebase, reduced cost/time                           | Performance limitations, limited device access                 |
 | **Web**     | Platform-independent, no installation                        | Limited device features, dependent on browser and connectivity |
 
+### Examples of Mobile App Types
+
+---
+
+**1. Native Apps**
+   - **Instagram** (iOS and Android): Originally built as a native app for optimal performance, particularly for heavy media use and device-specific features like the camera.
+   - **Spotify** (iOS and Android): Provides a seamless music streaming experience with offline playback, integrating with device-specific features like volume control and audio optimization.
+   - **WhatsApp** (iOS and Android): Offers high-speed messaging and calling functionality with full access to device features like contacts, camera, and microphone.
+
+   **Characteristics of Native Apps**: Excellent performance, smooth animations, full integration with device features, and a consistent user experience aligned with each platform's design principles.
+
+---
+
+**2. Hybrid Apps**
+   - **Uber**: Combines native elements with web technologies for a consistent experience across iOS and Android. Uber uses a single codebase for basic functions, maintaining separate native components for critical high-performance areas like GPS tracking.
+   - **Instagram Lite**: A lighter, hybrid version of the Instagram app that uses web-based elements to reduce storage size and maintain compatibility across devices.
+   - **Twitter**: Initially developed as a hybrid app to allow quick updates across platforms, using web technologies within a native wrapper.
+
+   **Characteristics of Hybrid Apps**: Cost-effective development, compatibility across multiple platforms with a single codebase, and often satisfactory but slightly reduced performance compared to native apps.
+
+---
+
+**3. Web Apps**
+   - **Pinterest**: Provides a mobile web version that allows users to browse and save ideas without downloading an app, designed to work seamlessly on mobile browsers.
+   - **Google Maps** (Web): Accessible from any browser, Google Maps offers location search, directions, and basic navigation without needing a dedicated app.
+   - **AliExpress**: Offers a mobile-optimized web app that lets users browse and purchase products directly from their mobile browsers, eliminating the need for app downloads.
+
+   **Characteristics of Web Apps**: Accessible from any device with a browser, lower maintenance costs, and easy updates, though they have limited access to device hardware and depend on internet connectivity.
+
 ---
 
 ### Part 2: React Native Setup
