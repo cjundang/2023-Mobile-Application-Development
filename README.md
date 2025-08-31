@@ -1,7 +1,7 @@
 # Mobile Application Development(React Native)
 
 * **Course**: ITD62-322 / IIT67-271 — Mobile (Cross-Platform) App Development
-* **Instructor**: Assist. Prof. Dr. Chanankorn Jandaeng — [cjundang@gmail.com](mailto:cjundang@gmail.com)
+* **Instructor**: Assist. Prof. Dr. Chanankorn Jandaeng 
 * **Credits**: 3 (2-2-5)
 * **Prereq**: Foundational programming (or equivalent).&#x20;
 
@@ -113,6 +113,15 @@
 * **Task:** Implement tab navigation, fade-in animation, and swipe gestures.
 
 ---
+
+### Week 11 – [Data Storage and Local Storage Options](week-11.md)
+
+* AsyncStorage for simple key-value storage.
+* SQLite for local database integration.
+* CRUD operations (create, read, update, delete).
+* **Task:** Build a Notes App with AsyncStorage and extend it to support editing/deleting.
+
+
 
 
 ## Teaching & learning methods
