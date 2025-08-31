@@ -21,19 +21,99 @@
 * **Comm/Teamwork** – 10%
 * **Ethics & Responsibility** – 10%&#x20;
 
-## Weekly roadmap (condensed)
+## Weekly roadmap 
 
-1. **Intro + Tools**: Mobile landscape; RN vs others; Node.js, npm, Expo, VS Code.
-2. **JSX & Components**: props, `useState`; core UI components.
-3. **Styling & Layout**: StyleSheet, fonts/colors; Flexbox & responsive layouts.
-4. **Navigation**: Stack, Drawer, Tabs, icons.
-5. **Data & Lists**: Forms/validation; `FlatList`, `ScrollView`.
-6. **APIs**: Axios, REST (GET/POST), JSON Server; data-bound UI.
-7. **Midterm project planning & presentation**: Wireframes, mockups, feedback.
-8. **Sensors & ML intro**: Permissions; motion/location; ML use-case ideation.
-   9–10. **Final project dev**: Features, integration, testing; docs & ethics.
-9. **Rehearsal + Final presentation**.
-10. **Review & Final Exam** (concept + logic).&#x20;
+### Week 1 – [Introduction to Mobile Development & JavaScript Basics](week-01.md)
+
+* Mobile app types: native, hybrid, and web.
+* Setting up React Native (Expo & CLI).
+* JavaScript basics: variables, data types, control structures.
+* **Task:** Create a “Hello World” React Native app and practice with JavaScript fundamentals.
+
+---
+
+### Week 2 – [JavaScript Fundamentals & React Basics](week-02.md)
+
+* Functions (regular & arrow).
+* Arrays & objects.
+* JSX syntax and React components.
+* Props for passing data.
+* **Task:** Build a `Greeting` component with props.
+
+---
+
+### Week 3 – [State and Events in React](week-03.md)
+
+* Using `useState` for component state.
+* Event handling (button clicks, input changes).
+* Introduction to `useEffect` lifecycle.
+* **Task:** Build a Counter App with increment/decrement and input for initial value.
+
+---
+
+### Week 4 – [React Native Core Components & Layout](week-04.md)
+
+* Core components: `View`, `Text`, `Image`, `Button`.
+* Flexbox layout system.
+* TouchableOpacity for interactivity.
+* **Task:** Build a layout with text, image, and interactive button.
+
+---
+
+### Week 5 – [Styling & Navigation](week-05.md)
+
+* Styling with `StyleSheet`.
+* Introduction to React Navigation (stack).
+* Reusable and global styles.
+* **Task:** Create Home & Profile screens with navigation.
+
+---
+
+### Week 6 – [User Input & Forms](week-06.md)
+
+* Using `TextInput` for forms.
+* Controlled components.
+* Basic validation.
+* **Task:** Create a Login Form with username/password validation.
+
+---
+
+### Week 7 – [State Management & API Integration](week-07.md)
+
+* Context API for global state.
+* Fetch API for external data.
+* Rendering lists with API data.
+* **Task:** Create a Theme Context and fetch/display jokes from an API.
+
+---
+
+### Week 8 – [Device Features & Permissions](week-08.md)
+
+* Accessing camera with `expo-camera`.
+* Requesting permissions.
+* Using location services with `expo-location`.
+* **Task:** Build a Camera App and display user’s location.
+
+---
+
+### Week 9 – [External Libraries & Custom Components](week-09.md)
+
+* Using UI libraries (e.g., `react-native-elements`).
+* Building reusable components.
+* Styling third-party components.
+* **Task:** Create a reusable button & themed profile card.
+
+---
+
+### Week 10 – [Advanced Navigation & Animations](week-10.md)
+
+* Tab & drawer navigation.
+* Animations with `Animated API`.
+* Gesture handling with `react-native-gesture-handler`.
+* **Task:** Implement tab navigation, fade-in animation, and swipe gestures.
+
+---
+
 
 ## Teaching & learning methods
 
