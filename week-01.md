@@ -1,15 +1,7 @@
-### Week 1: Introduction to Mobile Development & JavaScript Basics
+# Week 1: Introduction to Mobile Development & JavaScript Basics
 
----
-
-#### Lecture Notes
-
----
-
-### Part 1: Introduction to Mobile App Development Concepts
+## Part 1: Introduction to Mobile App Development Concepts
 ### 1.1 Overview of Mobile App Types
-
----
 
 **1. Native Apps**  
 - **Definition**: Developed specifically for a particular platform (e.g., iOS or Android), typically using the platform's preferred programming languages.
@@ -25,7 +17,6 @@
   - **Higher Development and Maintenance Costs**: Requires separate development teams and codebases for iOS and Android, which increases costs and resources.
   - **Time-Intensive**: Building and maintaining distinct versions for each platform demands more time and complexity.
 
----
 
 **2. Hybrid Apps**  
 - **Definition**: Uses a combination of **web technologies** (HTML, CSS, JavaScript) enclosed in a **native container** to function on multiple platforms.
@@ -39,8 +30,6 @@
   - **Performance Limitations**: Slower than native apps, as they don’t have direct access to device hardware, leading to lag, especially in high-performance scenarios.
   - **Limited Device Access**: Access to device features (e.g., Bluetooth, accelerometer) may be restricted or not as seamless as with native apps.
 
----
-
 **3. Web Apps**  
 - **Definition**: Mobile-friendly websites accessible via web browsers, designed using **standard web technologies** like HTML, CSS, and JavaScript.
   
@@ -52,19 +41,16 @@
   - **Limited Device Access**: Restricted to features accessible through the browser, limiting their ability to use device hardware (e.g., GPS, camera).
   - **Dependency on Browser Performance and Internet Connectivity**: Performance and user experience vary based on browser efficiency and network speed.
 
----
 
-### Key Points Summary
+#### Key Points Summary
 
-| App Type    | Pros                                                         | Cons                                                           |
-|-------------|--------------------------------------------------------------|----------------------------------------------------------------|
+| App Type    | Pros    | Cons                   |
+|-------------|-------|--------------------------|
 | **Native**  | High performance, full device access, optimal UX             | High cost, separate codebases                                  |
 | **Hybrid**  | Single codebase, reduced cost/time                           | Performance limitations, limited device access                 |
 | **Web**     | Platform-independent, no installation                        | Limited device features, dependent on browser and connectivity |
 
-### Examples of Mobile App Types
-
----
+#### Examples of Mobile App Types
 
 **1. Native Apps**
    - **Instagram** (iOS and Android): Originally built as a native app for optimal performance, particularly for heavy media use and device-specific features like the camera.
@@ -73,8 +59,6 @@
 
    **Characteristics of Native Apps**: Excellent performance, smooth animations, full integration with device features, and a consistent user experience aligned with each platform's design principles.
 
----
-
 **2. Hybrid Apps**
    - **Uber**: Combines native elements with web technologies for a consistent experience across iOS and Android. Uber uses a single codebase for basic functions, maintaining separate native components for critical high-performance areas like GPS tracking.
    - **Instagram Lite**: A lighter, hybrid version of the Instagram app that uses web-based elements to reduce storage size and maintain compatibility across devices.
@@ -82,7 +66,6 @@
 
    **Characteristics of Hybrid Apps**: Cost-effective development, compatibility across multiple platforms with a single codebase, and often satisfactory but slightly reduced performance compared to native apps.
 
----
 
 **3. Web Apps**
    - **Pinterest**: Provides a mobile web version that allows users to browse and save ideas without downloading an app, designed to work seamlessly on mobile browsers.
@@ -91,11 +74,10 @@
 
    **Characteristics of Web Apps**: Accessible from any device with a browser, lower maintenance costs, and easy updates, though they have limited access to device hardware and depend on internet connectivity.
 
----
 
-### Part 2: React Native Setup
+## Part 2: React Native Setup
 
-#### 2.1 Setting Up the Development Environment
+### 2.1 Setting Up the Development Environment
 
 1. **Install Node.js**: 
    - Necessary to run JavaScript outside of a browser.
@@ -117,13 +99,9 @@
 5. **Running "Hello World" App**:
    - Modify `App.js` to display "Hello World" and verify it runs in the simulator or on a device.
 
----
 
-### Part 3: JavaScript Basics
-
----
-
-#### 3.1 Variables and Data Types
+## Part 3: JavaScript Basics
+### 3.1 Variables and Data Types
 
 - **Declaring Variables**:
   - `let` and `const`:
@@ -157,10 +135,7 @@ console.log("Name:", name);
 console.log("Age:", age);
 console.log("Is Student:", isStudent);
 ```
-
----
-
-#### 3.2 Control Structures
+### 3.2 Control Structures
 
 - **If Statements**:
   - Basic structure for decision-making.
@@ -172,7 +147,6 @@ console.log("Is Student:", isStudent);
       console.log("You are a minor.");
   }
   ```
-
 - **Loops**:
   - **For Loop**:
     - Repeats code a specified number of times.
@@ -191,7 +165,7 @@ console.log("Is Student:", isStudent);
     }
     ```
 
-##### Programming Task:
+### Programming Task:
 Write a program to check if a number is odd or even.
 
 Example:
@@ -204,7 +178,7 @@ if (number % 2 === 0) {
 }
 ```
 
---- 
+
 
 ### Summary
 
