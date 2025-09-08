@@ -163,6 +163,7 @@ export default function App() {
 ```
 
 
+### 3.2) เพิ่ม ปุ่มกด 
 
 ```JavaScript
 <TouchableOpacity
