@@ -30,7 +30,7 @@
 ## 2) สร้างแอป React Native (แนะนำใช้ Expo)
 
 ```bash
-npx create-expo-app rn-jsonserver-login
+npx create-expo-app rn-jsonserver-login --template
 cd rn-jsonserver-login
 npm start
 ```
@@ -48,3 +48,74 @@ npm start
 * รูปแบบ UI เรียบสะอาด เหมาะต่อการทดลอง
 
 
+```
+import {React} from "react";
+import {
+  SafeAreaView, View, Text, StyleSheet,
+} from "react-native";
+
+
+export default function App() {
+  return (
+        <SafeAreaView style={styles.root}>
+          <View style={styles.card}>
+        <Text style={styles.title}>ลงทะเบียนผู้ใช้ (ฉบับง่าย)</Text>
+        </View>
+        </SafeAreaView>    
+  );
+}
+
+```
+
+Stytlesheet
+
+```
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    backgroundColor: "#f6f7fb",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: 16,
+  },
+  card: {
+    width: "100%",
+    maxWidth: 420,
+    backgroundColor: "white",
+    borderRadius: 14,
+    padding: 18,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 3,
+  },
+  title: {
+    fontSize: 18,
+    fontWeight: "700",
+    marginBottom: 12,
+    textAlign: "center",
+  },
+  input: {
+    backgroundColor: "#fafafa",
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    fontSize: 16,
+    marginBottom: 10,
+  },
+  msg: { marginVertical: 6, fontSize: 13, color: "#374151" },
+  button: {
+    backgroundColor: "#111827",
+    paddingVertical: 12,
+    borderRadius: 10,
+    alignItems: "center",
+  },
+  buttonDisabled: { opacity: 0.6 },
+  buttonText: { color: "white", fontWeight: "700", fontSize: 16 },
+  note: { marginTop: 10, fontSize: 12, color: "#6b7280", textAlign: "center" },
+});
+
+```
