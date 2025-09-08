@@ -144,22 +144,32 @@ export default function App() {
 เพิ่ม TextInput
 
 ```JavaScript
+    <TextInput
+        placeholder="Username"
+        value={username}
+        onChangeText={setUsername}
+        autoCapitalize="none"
+        autoCorrect={false}
+        style={styles.input}
+    />
 
-        <TextInput
-          placeholder="Username"
-          value={username}
-          onChangeText={setUsername}
-          autoCapitalize="none"
-          autoCorrect={false}
-          style={styles.input}
-        />
+    <TextInput
+        placeholder="Password"
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry
+        style={styles.input}
+    />
+```
 
-        <TextInput
-          placeholder="Password"
-          value={password}
-          onChangeText={setPassword}
-          secureTextEntry
-          style={styles.input}
-        />
 
+
+```JavaScript
+<TouchableOpacity
+    // onPress={handleSubmit}
+    disabled={loading}
+    style={[styles.button, loading && styles.buttonDisabled]}
+>
+    <Text style={styles.buttonText}>บันทึก</Text>
+</TouchableOpacity>
 ```
