@@ -48,7 +48,7 @@ npm start
 * รูปแบบ UI เรียบสะอาด เหมาะต่อการทดลอง
 
 
-```
+```JavaScript
 import {React} from "react";
 import {
   SafeAreaView, View, Text, StyleSheet,
@@ -69,7 +69,7 @@ export default function App() {
 
 Stytlesheet
 
-```
+```CSS
 const styles = StyleSheet.create({
   root: {
     flex: 1,
