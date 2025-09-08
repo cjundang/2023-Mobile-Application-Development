@@ -167,10 +167,12 @@ export default function App() {
 
 ```JavaScript
 <TouchableOpacity
-    // onPress={handleSubmit}
+    onPress={handleSubmit}
     disabled={loading}
     style={[styles.button, loading && styles.buttonDisabled]}
 >
     <Text style={styles.buttonText}>บันทึก</Text>
 </TouchableOpacity>
 ```
+
+
