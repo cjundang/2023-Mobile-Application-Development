@@ -6,7 +6,11 @@ In your project root, create `db.json`:
 
 ```json
 {
-  "users": []
+  "users": [{
+    id:1,
+    "username": "cj",
+    "password":"1234"
+}]
 }
 ```
 
