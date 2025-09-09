@@ -7,7 +7,7 @@ In your project root, create `db.json`:
 ```json
 {
   "users": [{
-    id:1,
+    "id":1,
     "username": "cj",
     "password":"1234"
 }]
