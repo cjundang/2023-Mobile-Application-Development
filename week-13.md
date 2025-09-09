@@ -42,18 +42,12 @@ export default function App() {
 }
 ```
 
-✅ Run app: You should see a screen with “Hello Expo!”.
+ Run app: You should see a screen with “Hello Expo!”.
 
----
 
-# 🛠 Step 3: Add **LoginScreen**
+### Step 3: Add **LoginScreen**
 
-Got it ✅ — let’s **split Step 3 (Login screen)** into **smaller incremental steps**.
-Each step will be **minimal runnable code**, so you can test piece by piece.
-
----
-
-# 🛠 Step 3.1: Create a blank Login screen
+###  Step 3.1: Create a blank Login screen
 
 Create `screens/LoginScreen.js`:
 
@@ -78,11 +72,7 @@ import LoginScreen from './screens/LoginScreen';
 <Stack.Screen name="Login" component={LoginScreen} />
 ```
 
-✅ Run: You see “Login Screen”.
-
----
-
-# 🛠 Step 3.2: Add username & password inputs
+### Step 3.2: Add username & password inputs
 
 Update `LoginScreen.js`:
 
@@ -116,9 +106,8 @@ export default function LoginScreen() {
 
 ✅ Run: You can type into the fields.
 
----
 
-# 🛠 Step 3.3: Add Login button (no API yet)
+### Step 3.3: Add Login button (no API yet)
 
 ```javascript
 import React, { useState } from 'react';
@@ -146,28 +135,28 @@ export default function LoginScreen() {
 
 ---
 
-# 🛠 Step 3.4: Connect to JSON Server API
+#### Step 3.4: Connect to JSON Server API
 
 Final step → check credentials from `db.json`.
 
 ```javascript
 import React, { useState } from 'react';
-import { View, TextInput, Button, Alert } from 'react-native';
+import { View, TextInput, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';  
 
 export default function LoginScreen({ navigation }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+    const navigation = useNavigation();
 
   const handleLogin = () => {
-    fetch(`http://localhost:3001/users?username=${username}&password=${password}`)
+    let url = `http://localhost:3001/users?username=${username}&password=${password}`;
+    fetch(url)
       .then(res => res.json())
       .then(data => {
         if (data.length > 0) {
-          Alert.alert('Login success', 'Welcome ' + data[0].username);
           navigation.navigate('UserProfile');
-        } else {
-          Alert.alert('Error', 'Invalid credentials');
-        }
+        }  
       });
   };
 
@@ -183,25 +172,13 @@ export default function LoginScreen({ navigation }) {
 
 ✅ Run:
 
-* Type `alice / 123456` (if exists in `db.json`).
+* Type `cj / 1234` (if exists in `db.json`).
 * Login → navigates to **UserProfile**.
 
----
+ 
+### 🛠 Step 4: Add **UserProfile.js** (Register + Search + Edit merged)
 
-👉 Do you want me to **also split Register screen** into incremental steps like this (blank → inputs → button → API)?
-
-
-
----
-
-# 🛠 Step 4: Add **UserProfile.js** (Register + Search + Edit merged)
-
-Excellent 👍 — let’s split **Step 4 (UserProfile: Register + Search + Edit)** into **incremental runnable steps**.
-Each step will be **minimal code** you can run and test before moving forward.
-
----
-
-# 🛠 Step 4.1: Blank UserProfile screen
+### 🛠 Step 4.1: Blank UserProfile screen
 
 `screens/UserProfile.js`
 
@@ -249,9 +226,8 @@ export default function UserProfile() {
 
 ✅ Run: You can type into all fields.
 
----
-
-# 🛠 Step 4.3: Add buttons (no API yet)
+ 
+### 🛠 Step 4.3: Add buttons (no API yet)
 
 Add **Search**, **Register**, and **Update** buttons.
 
@@ -282,9 +258,9 @@ export default function UserProfile() {
 
 ✅ Run: Pressing buttons shows alerts.
 
----
+ 
 
-# 🛠 Step 4.4: Add Search API (GET)
+### 🛠 Step 4.4: Add Search API (GET)
 
 Implement **search by username**.
 
@@ -298,7 +274,6 @@ const handleSearch = () => {
         setPassword(u.password);
         setEmail(u.email);
         setFullname(u.fullname);
-        alert('User found: ' + u.username);
       } else {
         alert('No user found');
       }
@@ -312,11 +287,9 @@ Update Search button:
 <Button title="Search" onPress={handleSearch} />
 ```
 
-✅ Run: Typing a username (e.g., `alice`) and pressing **Search** loads data from `db.json`.
+✅ Run: Typing a username (e.g., `cj`) and pressing **Search** loads data from `db.json`.
 
----
-
-# 🛠 Step 4.5: Add Register API (POST)
+### 🛠 Step 4.5: Add Register API (POST)
 
 ```javascript
 const handleRegister = () => {
@@ -338,9 +311,9 @@ Update Register button:
 
 ✅ Run: Fill fields → Register → New user saved in `db.json`.
 
----
+ 
 
-# 🛠 Step 4.6: Add Update API (PATCH)
+### 🛠 Step 4.6: Add Update API (PATCH)
 
 We need the user’s **id**. Modify Search to also set `id`:
 
@@ -387,26 +360,13 @@ Update button:
 
 ✅ Run: Search user → change fields → Update → changes saved in `db.json`.
 
----
 
 🎯 Now your `UserProfile.js` supports **Search, Register, Update** step by step.
 
----
 
-👉 Do you want me to also **split Step 5 (UserList with delete)** into incremental steps like this (blank → list → delete)?
+### 🛠 Step 5: Add **UserList.js** (Read + Delete)
 
-
-
----
-
-# 🛠 Step 5: Add **UserList.js** (Read + Delete)
-
-Perfect 👍 — let’s split **Step 5 (UserList screen: Read + Delete)** into **small incremental steps**.
-Each step will be runnable with the shortest working code.
-
----
-
-# 🛠 Step 5.1: Blank UserList screen
+### 🛠 Step 5.1: Blank UserList screen
 
 `screens/UserList.js`
 
@@ -425,9 +385,8 @@ export default function UserList() {
 
 ✅ Run: Navigate to **UserList**, you see simple text.
 
----
 
-# 🛠 Step 5.2: Fetch and show raw list (no styling)
+### 🛠 Step 5.2: Fetch and show raw list (no styling)
 
 ```javascript
 import React, { useEffect, useState } from 'react';
@@ -454,7 +413,6 @@ export default function UserList() {
 
 ✅ Run: Shows all usernames from `db.json`.
 
----
 
 # 🛠 Step 5.3: Use FlatList for cleaner rendering
 
@@ -487,9 +445,9 @@ export default function UserList() {
 
 ✅ Run: List shows `username (email)`.
 
----
+ 
 
-# 🛠 Step 5.4: Add Delete button (per user)
+### 🛠 Step 5.4: Add Delete button (per user)
 
 ```javascript
 import React, { useEffect, useState } from 'react';
@@ -530,9 +488,8 @@ export default function UserList() {
 
 ✅ Run: Tap **Delete**, user is removed from `db.json` and list refreshes.
 
----
 
-# 🛠 Step 5.5: (Optional) Add refresh button
+### 🛠 Step 5.5: (Optional) Add refresh button
 
 If you want manual refresh:
 
@@ -540,16 +497,9 @@ If you want manual refresh:
 <Button title="Reload" onPress={loadUsers} />
 ```
 
----
-
 🎯 Now your `UserList.js` supports:
 
 * Blank screen → list users → delete users.
-
----
-
-👉 Do you want me to also **split Step 6 (json-server backend setup)** into incremental steps (install → db.json → run → test API)?
-
 
 
 ---
