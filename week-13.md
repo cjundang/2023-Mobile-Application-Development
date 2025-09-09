@@ -1,4 +1,48 @@
- 
+
+## JSON Server
+### 🛠 Step 6: Setup JSON Server
+
+In your project root, create `db.json`:
+
+```json
+{
+  "users": []
+}
+```
+
+Run backend:
+
+```bash
+npx json-server --watch db.json --port 3001
+```
+
+---
+
+### ✅ Final Project Structure
+
+```
+MyAuthApp/
+│
+├── App.js
+├── db.json                # backend for json-server
+│
+├── screens/
+│   ├── LoginScreen.js
+│   ├── UserProfile.js     # Register + Search + Edit
+│   └── UserList.js        # List + Delete
+│
+├── package.json
+└── node_modules/
+```
+
+👉 Now you have **full CRUD** with Expo + JSON Server:
+
+* **Login** → `LoginScreen.js`
+* **Register/Search/Edit** → `UserProfile.js`
+* **List/Delete** → `UserList.js`
+
+
+## Frontend with ReactNative
 ### 🛠 Step 1: Create a new Expo app
 
 ```bash
@@ -502,51 +546,3 @@ If you want manual refresh:
 * Blank screen → list users → delete users.
 
 
----
-
-# 🛠 Step 6: Setup JSON Server
-
-In your project root, create `db.json`:
-
-```json
-{
-  "users": []
-}
-```
-
-Run backend:
-
-```bash
-npx json-server --watch db.json --port 3001
-```
-
----
-
-# ✅ Final Project Structure
-
-```
-MyAuthApp/
-│
-├── App.js
-├── db.json                # backend for json-server
-│
-├── screens/
-│   ├── LoginScreen.js
-│   ├── UserProfile.js     # Register + Search + Edit
-│   └── UserList.js        # List + Delete
-│
-├── package.json
-└── node_modules/
-```
-
----
-
-👉 Now you have **full CRUD** with Expo + JSON Server:
-
-* **Login** → `LoginScreen.js`
-* **Register/Search/Edit** → `UserProfile.js`
-* **List/Delete** → `UserList.js`
-
----
-
-Would you like me to **extend Login** to generate a **fake JWT token (mock authentication)** so the app feels closer to a real-world system?
