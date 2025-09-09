@@ -1,24 +1,12 @@
-Perfect 👌 — let’s build your **React Native + Expo + JSON Server CRUD app** in **incremental steps**, starting exactly from
+ 
+### 🛠 Step 1: Create a new Expo app
 
 ```bash
-npx create-expo-app MyAuthApp --template blank
-```
-
-I’ll keep each step runnable with the **shortest working code**.
-
----
-
-# 🛠 Step 1: Create a new Expo app
-
-```bash
-npx create-expo-app MyAuthApp --template blank
+npx create-expo-app --template
 cd MyAuthApp
-npm start
+npx expo install react-dom react-native-web @expo/metro-runtime
+npm run web
 ```
-
-👉 You now have a **blank Expo project** with `App.js`.
-
----
 
 # 🛠 Step 2: Install navigation
 
