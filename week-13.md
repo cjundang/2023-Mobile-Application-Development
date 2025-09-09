@@ -1,4 +1,4 @@
-
+# Register (Form + API)
 ## JSON Server
 ### 🛠 Step 6: Setup JSON Server
 
@@ -20,7 +20,7 @@ Run backend:
 npx json-server --watch db.json --port 3001
 ```
 
----
+ 
 
 ### ✅ Final Project Structure
 
