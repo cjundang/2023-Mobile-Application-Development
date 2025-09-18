@@ -23,130 +23,114 @@
 
 ## Weekly roadmap 
 
-### Week 1 – [Introduction to Mobile Development & JavaScript Basics](week-01.md)
 
-* Mobile app types: native, hybrid, and web.
-* Setting up React Native (Expo & CLI).
-* JavaScript basics: variables, data types, control structures.
-* **Task:** Create a “Hello World” React Native app and practice with JavaScript fundamentals.
+### [01 - Introduction to Mobile App Development Concepts](01_th.md)
 
----
+บทนี้แนะนำพื้นฐานของการพัฒนาแอปพลิเคชันบนมือถือ โดยแบ่งแอปออกเป็น 3 ประเภทหลัก ได้แก่ **Native Apps**, **Hybrid Apps**, และ **Web Apps** อธิบายทั้งข้อดี ข้อจำกัด และตัวอย่างการใช้งานจริง เช่น Instagram, Uber และ Google Maps ผู้เรียนจะได้เข้าใจว่าเหตุใดการเลือกประเภทแอปจึงขึ้นอยู่กับปัจจัยด้านประสิทธิภาพ ต้นทุน การเข้าถึงฟีเจอร์ของอุปกรณ์ และประสบการณ์ผู้ใช้ เนื้อหายังครอบคลุมการติดตั้งสภาพแวดล้อมการพัฒนา เช่น **Node.js**, **Expo CLI**, และ React Native CLI รวมถึงการสร้างโปรเจกต์แรกและทดสอบด้วยแอป "Hello World" เพื่อยืนยันว่าการตั้งค่าสภาพแวดล้อมทำงานถูกต้อง สุดท้าย บทนี้ยังปูพื้นฐานความรู้ **JavaScript Basics** เช่น ตัวแปร ชนิดข้อมูล และโครงสร้างควบคุม (if, loop) พร้อมแบบฝึกหัดให้ผู้เรียนได้ทดลองโค้ดอย่างง่าย ๆ
 
-### Week 2 – [JavaScript Fundamentals & React Basics](week-02.md)
+**หัวข้อหลักในไฟล์**
 
-* Functions (regular & arrow).
-* Arrays & objects.
-* JSX syntax and React components.
-* Props for passing data.
-* **Task:** Build a `Greeting` component with props.
+* Part 1: Introduction to Mobile App Development Concepts
+* Part 2: React Native Setup
+* Part 3: JavaScript Basics
+* Summary
+* Next Steps
 
 ---
 
-### Week 3 – [State and Events in React](week-03.md)
+## [02 - JavaScript Fundamentals & React Native Basics](02_th.md)
 
-* Using `useState` for component state.
-* Event handling (button clicks, input changes).
-* Introduction to `useEffect` lifecycle.
-* **Task:** Build a Counter App with increment/decrement and input for initial value.
+บทนี้เจาะลึกการเขียน **JavaScript** ที่ใช้เป็นภาษาหลักของ React Native โดยเน้นไปที่การทำงานกับ **ฟังก์ชัน**, **อ็อบเจกต์**, และ **อาร์เรย์** รวมถึงแนวคิดเชิงฟังก์ชัน (functional programming) เช่น map, filter, และ reduce เพื่อฝึกทักษะการประมวลผลข้อมูล นอกจากนี้ยังแนะนำพื้นฐานการเขียน React Native component เช่น การใช้ **View, Text, Image** และ props เพื่อสร้าง UI อย่างเป็นระบบ ผู้เรียนจะได้เรียนรู้แนวคิด **declarative UI** ที่เน้นว่าผลลัพธ์ของการเรนเดอร์ขึ้นอยู่กับ state และ props เท่านั้น ช่วยให้โค้ดมีความชัดเจนและง่ายต่อการบำรุงรักษา ส่วนท้ายบทมีแบบฝึกหัดที่เน้นการผสมผสานความรู้ JavaScript เข้ากับ React Native เพื่อต่อยอดไปสู่การสร้างแอปที่ซับซ้อนขึ้น
 
----
+**หัวข้อหลักในไฟล์**
 
-### Week 4 – [React Native Core Components & Layout](week-04.md)
-
-* Core components: `View`, `Text`, `Image`, `Button`.
-* Flexbox layout system.
-* TouchableOpacity for interactivity.
-* **Task:** Build a layout with text, image, and interactive button.
+* Part 1: JavaScript Fundamentals (ต่อ)
+* Part 2: React Native Basics
+* Summary
+* Next Steps
 
 ---
 
-### Week 5 – [Styling & Navigation](week-05.md)
+## [03 – Workshop: Counter App & To-do List](03_th.md)
 
-* Styling with `StyleSheet`.
-* Introduction to React Navigation (stack).
-* Reusable and global styles.
-* **Task:** Create Home & Profile screens with navigation.
+บทนี้เป็น **เชิงปฏิบัติการ (Workshop)** เพื่อเสริมความเข้าใจเรื่อง state และ event handling ผ่านการสร้างแอปสองประเภท ได้แก่ **Counter App** และ **To-do List Starter** ใน Counter App ผู้เรียนจะเข้าใจการใช้ useState เพื่อจัดการค่าตัวเลขที่เปลี่ยนแปลงตามการกดปุ่ม ส่วน To-do List จะยกระดับความซับซ้อน โดยเน้นการทำงานกับอาร์เรย์ การเพิ่ม/ลบ task และการเชื่อมโยง UI เข้ากับ state จริง ๆ การฝึกนี้ช่วยให้นักศึกษามองเห็นความสำคัญของ **state-driven UI** และแนวคิด immutability ที่ต้องใช้โครงสร้างข้อมูลใหม่แทนการแก้ไขค่าเดิม สุดท้ายมีการสรุปและโจทย์การเขียนโปรแกรมเพื่อฝึกฝนเพิ่มเติม เช่น การขยาย To-do ให้รองรับการแก้ไขรายการ หรือการจัดเก็บข้อมูลด้วย local storage
 
----
+**หัวข้อหลักในไฟล์**
 
-### Week 6 – [User Input & Forms](week-06.md)
-
-* Using `TextInput` for forms.
-* Controlled components.
-* Basic validation.
-* **Task:** Create a Login Form with username/password validation.
+* Part 1: Workshop – Build a Simple Counter App
+* Part 2: Workshop – To-do List Starter
+* Summary
+* Programming Tasks
 
 ---
 
-### Week 7 – [State Management & API Integration](week-07.md)
+## [04 – Core Components & Styling](04_th.md)
 
-* Context API for global state.
-* Fetch API for external data.
-* Rendering lists with API data.
-* **Task:** Create a Theme Context and fetch/display jokes from an API.
+บทนี้มุ่งเน้นการทำงานกับ **Core Components** ของ React Native เช่น View, Text, Image, ScrollView, TextInput และ Button ซึ่งเป็นองค์ประกอบสำคัญในการสร้าง UI จากนั้นขยายไปที่ **Styling** โดยใช้ StyleSheet.create เพื่อสร้างสไตล์ที่สามารถนำกลับมาใช้ซ้ำได้ รวมถึงการจัดการ layout และการออกแบบ responsive UI ในส่วน Workshop ผู้เรียนจะได้สร้าง **Profile Card App** ที่ผสมผสานการใช้ component, props และ styling เข้าด้วยกัน บทนี้ยังนำเสนอแนวปฏิบัติที่ดีในการออกแบบ เช่น การใช้สี ขนาดตัวอักษร และการจัดวาง เพื่อให้แอปมีความสวยงาม อ่านง่าย และเข้าถึงได้
 
----
+**หัวข้อหลักในไฟล์**
 
-### Week 8 – [Device Features & Permissions](week-08.md)
-
-* Accessing camera with `expo-camera`.
-* Requesting permissions.
-* Using location services with `expo-location`.
-* **Task:** Build a Camera App and display user’s location.
+* Part 1: Core Components in React Native
+* Part 2: Styling in React Native
+* Part 3: Hands-on Practice – Profile Card App
+* Summary
+* Next Steps
 
 ---
 
-### Week 9 – [External Libraries & Custom Components](week-09.md)
+## [05 – Flexbox & Layout Design](05_th.md)
 
-* Using UI libraries (e.g., `react-native-elements`).
-* Building reusable components.
-* Styling third-party components.
-* **Task:** Create a reusable button & themed profile card.
+บทนี้เจาะลึกการใช้ **Flexbox** ใน React Native เพื่อสร้าง layout ที่ยืดหยุ่นและปรับเปลี่ยนได้ตามขนาดหน้าจอ เนื้อหาครอบคลุมคุณสมบัติหลัก เช่น flexDirection, justifyContent, alignItems, และ flexWrap พร้อมการทดลองจริง ผู้เรียนจะได้ทำ Workshop สร้าง layout เช่น header, content และ footer โดยใช้ Flexbox เป็นหลัก เนื้อหายังเน้น **best practices** เช่น การจัดการ spacing, การใช้ SafeAreaView, และการออกแบบ responsive design เพื่อให้ UI แสดงผลได้ดีในอุปกรณ์หลากหลายขนาด สุดท้ายสรุปแนวทางการออกแบบ layout ที่ชัดเจนเพื่อใช้ต่อยอดในแอปขนาดใหญ่
 
----
+**หัวข้อหลักในไฟล์**
 
-### Week 10 – [Advanced Navigation & Animations](week-10.md)
-
-* Tab & drawer navigation.
-* Animations with `Animated API`.
-* Gesture handling with `react-native-gesture-handler`.
-* **Task:** Implement tab navigation, fade-in animation, and swipe gestures.
+* Part 1: Deep Dive into Flexbox
+* Part 2: Workshop – Build a Layout with Flexbox
+* Part 3: Styling Best Practices
+* Summary
+* Next Steps
 
 ---
 
-### Week 11 – [Data Storage and Local Storage Options](week-11.md)
+## [06 – CRUD & Data Structures](06_th.md)
 
-* AsyncStorage for simple key-value storage.
-* SQLite for local database integration.
-* CRUD operations (create, read, update, delete).
-* **Task:** Build a Notes App with AsyncStorage and extend it to support editing/deleting.
+บทนี้นำเสนอหลักการ **CRUD (Create, Read, Update, Delete)** ร่วมกับการใช้ **AsyncStorage** หรือ local storage เพื่อจัดการข้อมูลในแอป React Native โดยยกตัวอย่างโครงสร้างข้อมูลแบบอาร์เรย์และอ็อบเจกต์ที่เหมาะสมสำหรับเก็บข้อมูลการเรียนการสอนหรือรายการทั่วไป นอกจากนี้ยังสอนการสร้างโปรเจกต์ใหม่ การออกแบบ UI และการปรับแต่งสไตล์ให้เหมาะสม บทนี้ช่วยให้นักศึกษาสามารถสร้างแอปพลิเคชันที่บันทึกและแก้ไขข้อมูลจริงได้ พร้อมทั้งจัดการ state และ persistence อย่างเป็นระบบ เนื้อหาปิดท้ายด้วยการรวมโค้ดแอปแบบเต็มเพื่อใช้อ้างอิง
 
+**หัวข้อหลักในไฟล์**
 
+* Introduction
+* Data Structures Used in the Application
+* CRUD Operations on Storage
+* Creating the Project
+* UI and Styling
+* Complete Application Source Code
 
+---
 
-## Teaching & learning methods
+## [07 – Navigation & EduLesson App](07_th.md)
 
-Lectures, labs, project-based learning, peer reviews, presentations, and reflective practice. Expect weekly hands-on coding with RN/Expo.&#x20;
+บทนี้เจาะลึกการทำงานของ **React Navigation** โดยเน้นที่ **Stack Navigator** และอธิบายการทำงานของ state, route, และ action เช่น navigate, push และ goBack พร้อมการใช้พารามิเตอร์และ dynamic headers เนื้อหายังครอบคลุม **การสร้างโมเดลข้อมูล** สำหรับแอปการศึกษา (EduLesson) โดยเก็บข้อมูลเป็นอ็อบเจกต์ เช่น ชื่อบทเรียน วัตถุประสงค์ กลยุทธ์ และสื่อการสอน จากนั้นนำข้อมูลไปใช้กับ **FlatList** เพื่อแสดงผลในรูปแบบรายการและเชื่อมโยงไปยังหน้ารายละเอียด บทนี้ยังอธิบายการจัดการ asset, ไอคอน, และการออกแบบ UI ด้วย Flexbox ปิดท้ายด้วย Showcase การสร้างแอป EduLesson แบบเต็มที่ผสมผสานทฤษฎีและการปฏิบัติจริง
 
-## Policies (key points)
+**หัวข้อหลักในไฟล์**
 
-* **Attendance**: ≥80% to sit the final.
-* **Late work**: Penalized unless pre-approved.
-* **Academic integrity**: Plagiarism/cheating → disciplinary action.
-* **Comms**: Check LMS & email regularly.&#x20;
+* Navigation Fundamentals with React Navigation (Stack Navigator)
+* Data Modeling for Educational Content
+* List Rendering with FlatList
+* Assets and Iconography
+* Styling and Layout in React Native
+* Showcase: Building the Lesson App
 
-## Quick start checklist (suggested)
+---
 
-* Install **Node.js (LTS)**, **npm**, **Expo CLI**, **VS Code**, Android/iOS emulator.
-* Create a starter app with **Expo**; practice components, styling, navigation.
-* Set up **Axios** and hit a simple public API (e.g., GET list, show via `FlatList`).
-* Form a team early; draft **wireframes** and a brief feature scope for the final project.&#x20;
+## [08 – Delta-first Navigation & Product Showcase](08_th.md)
 
-If you’d like, I can turn this into a one-page printable or set up a milestone checklist you can tick off week by week.
+บทนี้ใช้แนวทาง **delta-first** ในการสอน โดยเริ่มจากโปรเจกต์ baseline ที่สามารถรันได้จริง แล้วค่อย ๆ เพิ่มการเปลี่ยนแปลงในแต่ละขั้นตอนเพื่อเน้นเฉพาะแนวคิดใหม่ ได้แก่ Step 1 การสร้าง Hello App ขั้นต่ำ, Step 2 การเพิ่ม Navigation Skeleton, Step 3 การแสดง Static Product List, Step 4 การดึงข้อมูลแบบ real-time ผ่าน useEffect และ Step 5 การปรับปรุงสไตล์และรายละเอียดของหน้าสินค้า บทนี้เน้นการผสมผสานแนวคิดเชิงทฤษฎี เช่น declarative UI, state formalism, และ asynchronous effect เข้ากับการปฏิบัติจริง เพื่อให้นักศึกษาสามารถพัฒนาแอป product showcase ได้ครบวงจร
 
+**หัวข้อหลักในไฟล์**
 
-
-
-
-
+* Step 1 — Minimal Hello App (Baseline)
+* Step 2 — Navigation Skeleton
+* Step 3 — Static Product List
+* Step 4 — Live Fetch with useEffect
+* Step 5 — Styling + Detail Enrichment
 
