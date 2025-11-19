@@ -11,7 +11,7 @@ author: "Mobile Application Development 2025"
 
 ---
 
-## **2.1 Introduction**
+## **2.0 Introduction**
 
 React Native represents the modern paradigm shift from **imperative programming** toward **component-based software architecture** and **declarative programming**.  
 Instead of describing *how* the system works, developers define *what* the UI should look like.
@@ -32,6 +32,131 @@ These principles converge to form a system where logic, data, and presentation c
 
 ---
 
+
+## 2.1 **Environment Setup Overview**
+
+
+### 1. Install Node.js (LTS)
+
+* Download from [https://nodejs.org](https://nodejs.org)
+* Choose the LTS version (e.g., 18 or 20)
+* Verify installation:
+
+```
+node -v
+npm -v
+```
+
+
+---
+
+### 1. Use the Local Expo CLI
+
+ *Global `expo-cli` is deprecated*
+
+* Remove legacy global CLI (if installed):
+
+```
+npm uninstall -g expo-cli
+```
+
+---
+### 2. Use the Local Expo CLI
+
+* Install expo
+
+```
+npm install expo-cli
+```
+
+* Use Local CLI via npx:
+
+```
+npx expo <command>
+```
+
+---
+
+### 3. Create a New Expo Project
+
+- Run:
+
+```
+npx create-expo-app myApp --template  
+```
+- select ">Blank (minimal ..........)
+
+---
+### 4. If you want to run on web
+
+Install this package 
+```
+npx expo install react-dom react-native-web
+```
+---
+
+### 5. Run the Project
+
+Start Metro Bundler:
+
+```
+npx expo start
+```
+
+* A QR Code will appear for mobile preview
+
+---
+
+### 6. Install Expo Go on Mobile
+
+- **Android**
+
+* Download from Google Play Store
+
+- **iOS**
+
+* Download from App Store
+
+Open Expo Go → Scan the QR Code to launch the app
+
+---
+
+### 7. Set Up Android Emulator (Optional)
+
+1. Install Android Studio
+2. Open **SDK Manager** → Install Android SDK
+3. Open **AVD Manager** → Create a Virtual Device
+4. Start the Emulator → Run:
+
+```
+npx expo start
+```
+
+Select "Run on Android device/emulator"
+
+---
+
+### 8. Validate the Environment
+
+Use:
+
+```
+npx expo-doctor
+```
+
+To ensure all dependencies and configurations are correct
+
+---
+
+### Essential Tools Summary
+
+* **Node.js LTS**
+* **npm**
+* **Local Expo CLI (npx expo)**
+* **Expo Go**
+* **Android Studio (optional)**
+
+---
 ## **2.2 React Component: The Building Block of UI**
 
 ### **Definition and Role**
