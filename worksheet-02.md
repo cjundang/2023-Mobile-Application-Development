@@ -53,11 +53,12 @@ function DisplayMessage({ ___[5]___ }) {
 }
 ```
 
-Now call this component from inside App:
+Now call this component from inside App that the value is "Hello WU"
 
 ```javascript
 <DisplayMessage message="___[7]___" />
 ```
+
 
 **Blanks to fill:**
 
